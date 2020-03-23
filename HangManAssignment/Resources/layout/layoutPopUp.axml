@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#353535">
+    <TextView
+        p1:text="You Lose!"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtLose"
+        p1:textColor="#FFFFFF"
+        p1:textSize="20sp"
+        p1:layout_centerHorizontal="true" />
+    <TextView
+        p1:text="The answer was:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtWordWas"
+        p1:textColor="#FFFFFF"
+        p1:textSize="20sp"
+        p1:layout_centerHorizontal="true"
+        p1:layout_below="@id/txtLose" />
+    <TextView
+        p1:text="Answer"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtAnswer"
+        p1:textColor="#FFFFFF"
+        p1:textSize="25sp"
+        p1:layout_centerHorizontal="true"
+        p1:layout_below="@id/txtWordWas"
+        p1:gravity="center_horizontal" />
+    <TextView
+        p1:text="Score: 000000"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtScore"
+        p1:layout_centerHorizontal="true"
+        p1:layout_centerVertical="true"
+        p1:textColor="#FFFFFF"
+        p1:textSize="30sp" />
+    <TextView
+        p1:text="Enter your name:"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/txtEnterName"
+        p1:textColor="#FFFFFF"
+        p1:textSize="20sp"
+        p1:layout_centerHorizontal="true"
+        p1:layout_below="@id/txtScore" />
+    <EditText
+        p1:id="@+id/editName"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_centerHorizontal="true"
+        p1:layout_below="@id/txtEnterName"
+        p1:layout_marginLeft="20dp"
+        p1:singleLine="true" />
+    <Button
+        p1:text="OK"
+        p1:id="@+id/btnOK"
+        p1:layout_width="206.4dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/editName"
+        p1:layout_marginTop="20dp"
+        p1:layout_centerHorizontal="true" />
+</RelativeLayout>
